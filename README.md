@@ -1,4 +1,4 @@
-# Keimzelle Sachsen – Grashalme & Improvisation
+# Creative Music Leipzig - Documentation Website
 
 Documentation website for the Creative Music Leipzig GbR project. The trio MOTUSNEU visits venues across Saxony, holds conversations with the people behind the local improvised-music scene, and publishes them as short audio documentaries (podcast episodes). This site makes that documentation publicly accessible.
 
