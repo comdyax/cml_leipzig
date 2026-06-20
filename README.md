@@ -48,7 +48,6 @@ One-time setup: in the repo **Settings → Pages**, set **Source = Deploy from a
 | -------------- | --------------- | ------------------------- |
 | `/`            | Home.jsx        | Yes — "Startseite"        |
 | `/map`         | MapPage.jsx     | Yes — "Keimzelle Sachsen" |
-| `/news`        | News.jsx        | No — link commented out   |
 | `/impressum`   | Impressum.jsx   | Footer link only          |
 | `/datenschutz` | Datenschutz.jsx | Footer link only          |
 

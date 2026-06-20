@@ -59,7 +59,6 @@ function Navigation() {
           <NavLink to="/map" className={linkClass} onClick={close}>
             Keimzelle Sachsen
           </NavLink>
-          {/* <NavLink to="/news" className={linkClass} onClick={close}>News & Termine</NavLink> */}
           {/* TODO: New Components: Musician Portraits */}
         </div>
       </nav>
