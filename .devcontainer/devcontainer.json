@@ -1,6 +1,9 @@
 {
     "name": "Node.js",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+    "features": {
+        "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+    },
     "forwardPorts": [
         5173
     ],
@@ -11,11 +14,13 @@
         }
     },
     "mounts": [
-        "source=claude-code-config-${devcontainerId},target=/home/node/.claude,type=volume"
+        "source=claude-code-config-${devcontainerId},target=/home/node/.claude,type=volume",
+        "source=node-modules-${devcontainerId},target=${containerWorkspaceFolder}/node_modules,type=volume"
     ],
-    "postCreateCommand": "bash .devcontainer/post-create.sh",
+    "postCreateCommand": "sudo chown -R node:node /home/node/.claude /workspaces/cml_leipzig/node_modules",
     "containerEnv": {
-        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+        "CLAUDE_CONFIG_DIR": "/home/node/.claude"
     },
     "customizations": {
         "vscode": {
